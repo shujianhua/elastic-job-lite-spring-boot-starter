@@ -1,6 +1,6 @@
 # Elastic Job Lite Spring Boot Starter
 ### 前言
- 本项目将 <a target="_blank" href="http://elasticjob.io/docs/elastic-job-lite/00-overview/"> Elastic Job Lite </a>封装成了基于注解形式的使用【@ElasticJobLite（）】，去掉了 xml 配置文件。
+ 本项目将 <a target="_blank" href="http://elasticjob.io/docs/elastic-job-lite/00-overview/"> Elastic Job Lite </a>封装成了基于注解形式的使用@ElasticJobLite（），去掉了 xml 配置文件。
 
 ### 创建Spring Boot项目,并在 pom.xml 中依赖：
 ``` java
