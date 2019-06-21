@@ -116,7 +116,7 @@ executorServiceHandler | String | 否 |  | 扩展作业处理线程池类
 disabled | boolean | 否 | false | 作业是否禁止启动 可用于部署作业时，先禁止启动，部署结束后统一启动
 overwrite | boolean | 否 | true | 本地配置是否可覆盖注册中心配置 如果可覆盖，每次启动作业都以本地配置为准
 monitorExecution | boolean | 否 | true | 监控作业运行时状态 每次作业执行时间和间隔时间均非常短的情况，建议不监控作业运行时状态以提升效率。因为是瞬时状态，所以无必要监控。请用户自行增加数据堆积监控。并且不能保证数据重复选取，应在作业中实现幂等性。 每次作业执行时间和间隔时间均较长的情况，建议监控作业运行时状态，可保证数据不会重复选取。
-monitorPort | int | 否 | -1 | 作业监控端口 建议配置作业监控端口, 方便开发者dump作业信息。 使用方法: echo “dump” | nc 127.0.0.1 9888
+monitorPort | int | 否 | -1 | 作业监控端口 建议配置作业监控端口, 方便开发者dump作业信息。
 maxTimeDiffSeconds | int | 否 | -1 | 最大允许的本机与注册中心的时间误差秒数 如果时间误差超过配置秒数则作业启动时将抛异常 配置为-1表示不校验时间误差
 jobShardingStrategyClass | String | 否 |  | 作业分片策略实现类全路径 默认使用平均分配策略 详情参见：作业分片策略 http://elasticjob.io/docs/elastic-job-lite/02-guide/job-sharding-strategy
 eventTraceRdbDataSource | String | 否 |  | 作业事件追踪的数据源Bean引用
@@ -125,4 +125,6 @@ listenerName | String | 否 |  | 前置后置任务监听实现类Bean引用，�
 distributedListenerName | String | 否 |  | 前置后置任务分布式监听实现类Bean引用，需继承AbstractDistributeOnceElasticJobListener类
 streamingProcess | boolean | 否 | false | 是否流式处理数据 (DataflowJob类型的作业专有属性)
 
+	
+详细配置请参考：<a href="http://elasticjob.io/docs/elastic-job-lite/02-guide/config-manual">Elastic Job 官网</a>
 
