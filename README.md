@@ -1,6 +1,7 @@
 # elastic-job-lite-spring-boot-starter
 
-### 使用步骤 【参考: <a href = "https://github.com/shujianhua/demo-integration/tree/master/demo-elastic-job">使用示例</a>】
+### 前言
+本项目将Elastic Job Lite 封装成了基于注解形式的使用（ @ElasticJobLite ），去掉了 xml 配置文件。
 
 #### 创建Spring Boot项目,并在 pom.xml 中依赖：
 ``` java
@@ -127,4 +128,4 @@ streamingProcess | boolean | 否 | false | 是否流式处理数据 (DataflowJob
 
 	
 详细配置请参考：<a href="http://elasticjob.io/docs/elastic-job-lite/02-guide/config-manual">Elastic Job 官网</a>
-
+使用代码示例: <a href = "https://github.com/shujianhua/demo-integration/tree/master/demo-elastic-job">使用Demo示例</a>
