@@ -1,8 +1,8 @@
 # elastic-job-lite-spring-boot-starter
-- ### 前言
+### 前言
  本项目将Elastic Job Lite 封装成了基于注解形式的使用【@ElasticJobLite（）】，去掉了 xml 配置文件。
 
-- ### 创建Spring Boot项目,并在 pom.xml 中依赖：
+### 创建Spring Boot项目,并在 pom.xml 中依赖：
 ``` java
 <dependency>
     <groupId>com.shu.elasticjob.spring.boot</groupId>
@@ -10,7 +10,7 @@
     <version>${lasted.release.version}</version>
 </dependency>
 ```
-- ### 创建作业任务服务类：
+### 创建作业任务服务类：
 
 1. Simple类型的任务 （监听器可选）
 ``` java
@@ -79,7 +79,7 @@ public class MyDataflowJobListener implements ElasticJobListener {
 	}
 }
 ```
-- ### 配置文件 application.yml
+### 配置文件 application.yml
 ``` yml
 spring:
   application:
@@ -99,7 +99,7 @@ spring:
 #      max-active: 20 #最大连接数
 ```
 
-- ### 注解属性说明 @ElasticJobLite()
+### 注解属性说明 @ElasticJobLite()
 属性 | 类型 | 必须 | 默认值 | 描述
 ----|----|----|----|----
 jobType | String | 否 | JobType.SIMPLE | JobType.SIMPLE 或 JobType.DATAFLOW
