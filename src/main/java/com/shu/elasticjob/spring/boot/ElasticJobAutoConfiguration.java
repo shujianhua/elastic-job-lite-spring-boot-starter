@@ -32,6 +32,11 @@ import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration;
 import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter;
 import com.shu.elasticjob.spring.boot.annotation.ElasticJobLite;
 
+/**
+ * Elastic Job 自动装配及实现类
+ * 将 Elastic Job Lite 封装成了基于注解形式的使用，去掉了 xml 配置文件
+ * @author shujianhua
+ */
 @Configuration
 @ConditionalOnExpression("'${elaticjob.zookeeper.serverList}'.length() > 0")
 public class ElasticJobAutoConfiguration {

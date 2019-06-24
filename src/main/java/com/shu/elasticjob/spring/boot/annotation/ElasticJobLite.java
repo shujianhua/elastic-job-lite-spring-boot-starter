@@ -1,5 +1,4 @@
 package com.shu.elasticjob.spring.boot.annotation;
-
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;
 import java.lang.annotation.Retention;
@@ -10,6 +9,10 @@ import org.springframework.stereotype.Component;
 
 import com.dangdang.ddframe.job.api.JobType;
 
+/**
+ * Elastic Job Lite 注解类
+ * @author shujianhua
+ */
 @Inherited
 @Target({ ElementType.TYPE })
 @Retention(RetentionPolicy.RUNTIME)
