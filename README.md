@@ -100,7 +100,7 @@ spring:
 #      max-active: 20 #最大连接数
 ```
 
-### 注解属性说明 @ElasticJobLite()，详细配置请参考：<a href="http://elasticjob.io/docs/elastic-job-lite/02-guide/config-manual">Elastic Job Lite 官网</a>
+### 注解属性说明 @ElasticJobLite()，详细说明请参考：<a href="http://elasticjob.io/docs/elastic-job-lite/02-guide/config-manual">Elastic Job Lite 官网</a>
 属性 | 类型 | 必须 | 默认值 | 描述
 ----|----|----|----|----
 jobType | String | 否 | JobType.SIMPLE | JobType.SIMPLE 或 JobType.DATAFLOW
