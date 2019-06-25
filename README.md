@@ -2,12 +2,13 @@
 ### 前言
  本项目将 <a target="_blank" href="http://elasticjob.io/docs/elastic-job-lite/00-overview/"> Elastic Job Lite </a>封装成了基于注解形式的使用@ElasticJobLite（），去掉了 xml 配置文件。
 
-### 创建Spring Boot项目,并在 pom.xml 中依赖：
+### 使用方式
+下载源码，用maven 编译成功。创建你的Spring Boot项目，并在 pom.xml 中添加依赖：
 ``` java
 <dependency>
     <groupId>com.shu.elasticjob.spring.boot</groupId>
     <artifactId>elastic-job-lite-spring-boot-starter</artifactId>
-    <version>${lasted.release.version}</version>
+    <version>2.0.0</version>
 </dependency>
 ```
 ### 创建作业任务服务类：
