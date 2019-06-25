@@ -1,10 +1,8 @@
 # Elastic Job Lite Spring Boot Starter
 ### 前言
+<a target="_blank" href="http://elasticjob.io/docs/elastic-job-lite/00-overview/"> Elastic-Job-Lite </a>是一个分布式调度解决方案，定位为轻量级无中心化解决方案，使用jar包的形式提供分布式任务的协调服务。
 
-Elastic-Job 是一个分布式调度解决方案，由两个相互独立的子项目Elastic-Job-Lite和Elastic-Job-Cloud组成。
-<a target="_blank" href="http://elasticjob.io/docs/elastic-job-lite/00-overview/"> Elastic-Job-Lite </a>定位为轻量级无中心化解决方案，使用jar包的形式提供分布式任务的协调服务。
-
-本项目将 Elastic Job Lite 封装成了基于注解形式的使用@ElasticJobLite（），去掉了 xml 配置文件。
+本项目将 Elastic Job Lite 封装为基于注解形式的使用，即 @ElasticJobLite（），去掉了 默认的 xml 配置文件。
 
 ### 使用方式
 下载源码<a href="https://github.com/shujianhua/elastic-job-lite-spring-boot-starter">Elastic Job Lite Spring Boot Starter</a>，用maven编译成功。创建你的Spring Boot项目，并在 pom.xml 中添加依赖：
